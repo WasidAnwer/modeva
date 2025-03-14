@@ -1,0 +1,115 @@
+header {
+  width: 100%;
+  background: #fff;
+  height: 70px;
+  color: #ffffff;
+  box-shadow: 0 1px 3px #00000069;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+}
+header .head-left {
+  position: relative;
+  align-content: center;
+}
+header .head-left .logo figure {
+  margin-bottom: 0;
+}
+header .head-left .logo figure img {
+  width: 240px;
+}
+header .head-left::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -7px;
+  width: 2px;
+  height: 78px;
+  background-color: #181818;
+}
+/* header .logo-1 {
+    width: 34%;
+    margin-left: 30px;
+  } */
+header .head-left ul li {
+  font-size: 24px;
+  padding-left: 42px;
+  position: relative;
+}
+header .head-left .nv-icon {
+  width: 30px;
+}
+header .head-left ul li {
+  font-size: 24px;
+  padding-left: 42px;
+  position: relative;
+}
+header .head-right ul {
+  justify-content: end;
+  margin: 0;
+  align-items: center;
+}
+header .head-right ul li {
+  width: 175px;
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .head-right ul li img {
+  width: 30px;
+}
+
+header .head-right ul li a.navi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 0;
+  color: #6d6d6d;
+}
+header .head-right ul li .navi {
+  background: none;
+  border: none;
+}
+header .head-right ul li .navi .moon {
+  font-size: 25px;
+  color: rgb(240, 64, 0);
+}
+header .head-right ul li a figure {
+  width: 60px;
+  margin: 0;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgb(93, 93, 93);
+}
+header .head-right ul li a figure img {
+  width: 100%;
+  border-radius: 50%;
+}
+header .head-right ul li:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 70px;
+  background: #080808;
+}
+header .head-right ul li .admin-txt {
+  color: #6d6d6d;
+}
+
+header .head-right ul li .log-out {
+  /* margin-top: 9px; */
+  display: block;
+  color: #6d6d6d;
+}
+header .head-right ul li .log-out:hover {
+  color: rgb(253, 0, 0);
+}
+.head-margin {
+  height: 61px;
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-color: rgba(87, 75, 75, 0.4) rgba(0, 0, 0, 0.4);
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  background: #ffff;
+  width: 100%;
+}
+body.dark-mode {
+  background-color: #abf6e1;
+  color: rgb(255, 255, 255);
+}
+
+header.dark-mode {
+  background-color: #4d0000;
+  color: rgba(87, 75, 75, 0.4);
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+ul {
+  padding: 0 !important;
+}
