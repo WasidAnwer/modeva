@@ -1,202 +1,202 @@
 .Add_section img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .Add_section {
-	padding: 100px 0;
-	background: #f9f7f7;
-	/* margin-left: 265px; */
+  padding: 100px 0;
+  background: #f9f7f7;
+  /* margin-left: 265px; */
 }
 
 .Add_section .product {
-	background: #fff;
-	border-radius: 15px 15px 0 0;
+  background: #fff;
+  border-radius: 15px 15px 0 0;
 }
 
 .Add_section .product .content {
-	padding: 20px;
+  padding: 20px;
 }
 
 .Add_section .product .content img {
-	background: #eef2f7;
-	border-radius: 15px;
+  background: #eef2f7;
+  border-radius: 15px;
 }
 
 .Add_section .product .content h4 {
-	font-size: 18px;
-	color: #313b5e;
-	font-weight: 600;
+  font-size: 18px;
+  color: #313b5e;
+  font-weight: 600;
 }
 
 span {
-	font-size: 14px;
-	color: #5d7186;
+  font-size: 14px;
+  color: #5d7186;
 }
 
 .Add_section .product .content h4 b {
-	margin-right: 10px;
-	font-weight: 600;
+  margin-right: 10px;
+  font-weight: 600;
 }
 
 .Add_section .product .content h4 b span {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .Add_section .product .content h5 {
-	font-size: 18px;
-	color: rgba(33, 37, 41);
+  font-size: 18px;
+  color: rgba(33, 37, 41);
 }
 
 .Add_section .product .content .sizes,
 .Add_section .product .content .colors {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .Add_section .product .content input {
-	position: absolute;
-	clip: rect(0, 0, 0, 0);
-	pointer-events: none;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
 }
 
-.Add_section .product .content input:checked+label {
-	background: #bec2c6;
-	color: #fff;
+.Add_section .product .content input:checked + label {
+  background: #bec2c6;
+  color: #fff;
 }
 
 .Add_section .product .content label {
-	background: #eef2f7;
-	color: #000;
-	height: 35px;
-	width: 35px;
-	text-align: center;
-	align-content: center;
-	border-radius: 10px;
-	padding: 5px;
-	cursor: pointer;
+  background: #eef2f7;
+  color: #000;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .Add_section .buttons {
-	background: #fcfcfd;
-	padding: 20px;
+  background: #fcfcfd;
+  padding: 20px;
 }
 
 .Add_section .buttons a {
-	width: fit-content;
-	text-decoration: none;
-	text-align: center;
-	padding: 10px;
-	border-radius: 12px;
+  width: fit-content;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .Add_section .buttons a:nth-child(1) {
-	background: transparent;
-	color: #5d7186;
-	border: 1px #5d7186 solid;
+  background: transparent;
+  color: #5d7186;
+  border: 1px #5d7186 solid;
 }
 
 .Add_section .buttons a:nth-child(1):hover {
-	background: #5d7186;
-	color: #fff;
+  background: #5d7186;
+  color: #fff;
 }
 
 .Add_section .buttons a:nth-child(2) {
-	background: #ff6c2f;
-	color: #fff;
+  background: #ff6c2f;
+  color: #fff;
 }
 
 .Add_section .buttons a:nth-child(2):hover {
-	background: #e6612a;
+  background: #e6612a;
 }
 
 .Add_section .product-fields .heading {
-	background: #fff;
-	padding: 10px;
-	border-radius: 15px 15px 0 0;
-	border-bottom: 1px solid #eaedf1;
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 1px solid #eaedf1;
 }
 
 .Add_section .product-fields .heading h4 {
-	font-size: 16px;
-	font-weight: 600;
-	color: #313b5e;
-	margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #313b5e;
+  margin: 0;
 }
 
 .Add_section .product-fields .content {
-	background: #fff;
-	text-align: center;
-	padding: 20px;
+  background: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 .Add_section .product-fields .content .inner {
-	border: 2px dashed #d8dfec;
-	padding: 50px 0;
-	position: relative;
-	z-index: 99;
+  border: 2px dashed #ff1271;
+  padding: 50px 0;
+  position: relative;
+  z-index: 99;
 }
 
 .Add_section .product-fields .content .inner input {
-	position: absolute;
-	height: 244px;
-	width: 746px;
-	opacity: 0;
-	cursor: pointer;
-	top: -4px;
-	right: -4px;
-	z-index: 100;
+  position: absolute;
+  height: 244px;
+  width: 746px;
+  opacity: 0;
+  cursor: pointer;
+  top: -4px;
+  right: -4px;
+  z-index: 100;
 }
 
 .Add_section .product-fields .content .inner i {
-	font-size: 48px;
-	color: #ff6c2f;
+  font-size: 48px;
+  color: #ff1271;
 }
 
 .Add_section .product-fields .content .inner h3 {
-	color: #313b5e;
-	font-weight: 600;
+  color: #313b5e;
+  font-weight: 600;
 }
 
 .Add_section .product-fields .content .inner h3 span {
-	font-size: 28px;
-	color: #ff6c2f;
+  font-size: 28px;
+  color: #ff1271;
 }
 
 .Add_section .product-fields .content .field {
-	text-align: start;
+  text-align: start;
 }
 
 .Add_section .product-fields .content .field label {
-	margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .Add_section .product-fields .content .field label,
 .Add_section .product-fields .content .field input,
 .Add_section .product-fields .content .field select {
-	font-size: 14px;
-	font-weight: 500;
-	color: #5d7186;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5d7186;
 }
 
 .Add_section .product-fields .content .field input::placeholder {
-	color: #5d7186;
+  color: #5d7186;
 }
 
 .Add_section .product-fields .content .field input:focus {
-	border: 1px solid #c4c5c5;
+  border: 1px solid #c4c5c5;
 }
 
 .Add_section .product-fields .content .field input,
 .Add_section .product-fields .content .field select {
-	display: block;
-	outline: none;
-	width: 100%;
-	padding: 10px;
-	border: 1px solid #d8dfec;
-	border-radius: 10px;
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8dfec;
+  border-radius: 10px;
 }
 
 .Add_section .product-fields .content .field select {
-	background: #fff;
+  background: #fff;
 }
