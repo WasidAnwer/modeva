@@ -5,7 +5,7 @@
 .Add_section {
   padding: 100px 0;
   background: #f9f7f7;
-  /* margin-left: 265px; */
+  width: 100%;
 }
 
 .Add_section .product {
