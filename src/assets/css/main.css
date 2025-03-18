@@ -58,12 +58,12 @@
   position: absolute;
   right: 15px;
   bottom: 10px;
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 /* Card Colors */
 .pink {
-  background: linear-gradient(to right, #fc136f, #fc136f);
+  background: linear-gradient(to right, #fc136f5c, #fc136f);
 }
 /* .blue {
   background: linear-gradient(to right, #1e3c72, #2a5298);
