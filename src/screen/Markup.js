@@ -14,12 +14,14 @@ function Markup() {
     };
     return (
         <>
-            <Header darkMode={darkMode} toggleMode={toggleMode} />
-            <Nav isCollapsed={isSidebarOpen} setIsCollapsed={setIsSidebarOpen} />
+            <header className={`${isSidebarOpen ? "open" : "closed"}`}>
+                <Header darkMode={darkMode} toggleMode={toggleMode} />
+            </header>
+            <nav>
+                <Nav isCollapsed={isSidebarOpen} setIsCollapsed={setIsSidebarOpen} />
+            </nav>
             <section className={`modeva ${isSidebarOpen ? "open" : "closed"}`}>
-                {/* <div className="modeva-container-body navigate"> */}
                 <Outlet /> {/* This will load Home, AddProduct, or ProductList */}
-                {/* </div> */}
             </section>
         </>
     )
