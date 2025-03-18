@@ -17,9 +17,9 @@ function Markup() {
             <Header darkMode={darkMode} toggleMode={toggleMode} />
             <Nav isCollapsed={isSidebarOpen} setIsCollapsed={setIsSidebarOpen} />
             <section className={`modeva ${isSidebarOpen ? "open" : "closed"}`}>
-                <div className="modeva-container-body navigate">
-                    <Outlet /> {/* This will load Home, AddProduct, or ProductList */}
-                </div>
+
+                <Outlet /> {/* This will load Home, AddProduct, or ProductList */}
+
             </section>
         </>
     )
