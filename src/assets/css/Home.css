@@ -1,6 +1,7 @@
 body {
   /* font-family: sf-pro !important; */
 }
+
 .modeva {
   display: flex;
   background-color: #f6f6f6;
@@ -9,19 +10,21 @@ body {
   padding-left: 60px;
   width: calc(100% - 60px);
 }
+
 .navigate {
   max-width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   position: relative;
 }
-.modeva.open {
+
+.open {
   width: 100%;
   transition: width 0.3s ease, margin-left 0.3s ease;
 }
 
 /* When sidebar is collapsed */
-.modeva.closed {
+.closed {
   width: calc(100% - 265px);
   margin-left: 265px;
   transition: width 0.3s ease, margin-left 0.3s ease;
@@ -35,6 +38,7 @@ body {
 /* *************************mobile screen****************************** */
 /* *************************mobile screen****************************** */
 @media (max-width: 767px) {
+
   /* .Echron-Form {
     margin-top: 25px;
   } */
