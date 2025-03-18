@@ -6,7 +6,7 @@ body {
   background-color: #f6f6f6;
   overflow: hidden;
   margin-top: 70px;
-  padding-left: 65px;
+  padding-left: 60px;
   width: calc(100% - 60px);
 }
 .navigate {
