@@ -108,7 +108,113 @@ function Add() {
                       </div>
                     </div>
                   </div>
+                  <div className="row">
+                    <div class="col-lg-4">
+                      <div class="field mb-3">
+                        <h5 class="mt-3">Size :</h5>
+                        <div class="sizes">
+                          <input type="checkbox" id="size-xs" />
+                          <label for="size-xs">XS</label>
+                          <input type="checkbox" id="size-s1" />
+                          <label for="size-s1">S</label>
+                          <input type="checkbox" id="size-m1" />
+                          <label for="size-m1">M</label>
+                          <input type="checkbox" id="size-xl1" />
+                          <label for="size-xl1">Xl</label><br />
+                        </div>
+                        <div className="sizes">
+                          <input type="checkbox" id="size-xxl1" />
+                          <label for="size-xxl1">XXL</label>
+                          <input type="checkbox" id="size-3xl" />
+                          <label for="size-3xl">3XL</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="field mb-3">
+                        <h5 class="mt-3">Colors :</h5>
+                        <div class="colors">
+                          <input type="checkbox" id="color-dark1" />
+                          <label for="color-dark1"> <i class="fa-solid fa-circle text-dark"></i></label>
+                          <input type="checkbox" id="color-yellow1" />
+                          <label for="color-yellow1"> <i class="fa-solid fa-circle text-warning"></i></label>
+                          <input type="checkbox" id="color-white1" />
+                          <label for="color-white1"> <i class="fa-solid fa-circle text-white"></i></label>
+                          <input type="checkbox" id="color-blue" />
+                          <label for="color-blue"> <i class="fa-solid fa-circle text-primary"></i></label>
+                          <input type="checkbox" id="color-red1" />
+                          <label for="color-red1"> <i class="fa-solid fa-circle text-danger"></i></label>
+                          <input type="checkbox" id="color-green" />
+                          <label for="color-green"> <i class="fa-solid fa-circle text-success"></i></label>
+                        </div>
+                        <div class="colors">
+                          <input type="checkbox" id="color-grey" />
+                          <label for="color-grey"> <i class="fa-solid fa-circle text-secondary"></i></label>
+                          <input type="checkbox" id="color-skublue" />
+                          <label for="color-skublue"> <i class="fa-solid fa-circle text-info"></i></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div class="col-lg-12">
+                      <div class="field mb-3">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="8" placeholder="Type The description here"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div class="col-lg-6">
+                      <div class="field mb-3">
+                        <label for="stock">Stock</label>
+                        <input type="number" id="stock" placeholder="Quantity" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="field mb-3">
+                        <label for="prod-tag">Tag</label>
+                        <select id="prod-tag">
+                          <option value="1">Electronics</option>
+                          <option value="2">Fashion</option>
+                          <option value="3">Headphones</option>
+                          <option value="4">Watches</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="product-fields mt-4">
+                <div class="heading">
+                  <h4>Pricing Details</h4>
+                </div>
+                <div class="content">
+                  <div className="row">
+                    <div class="col-lg-6">
+                      <div class="field mb-3">
+                        <label for="price">Price</label>
+                        <div className="price-div">
+                          <span><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                          <input type="number" id="price" placeholder="000" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="field mb-3">
+                        <label for="sale_price">Sale Price</label>
+                        <div className="price-div">
+                          <span><i class="fa-solid fa-percent"></i></span>
+                          <input type="number" id="sale_price" placeholder="000" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-btns mt-3">
+                <button><a href="#!">Reset</a></button>
+                <button><a href="#!">Save</a></button>
               </div>
             </div>
           </div>

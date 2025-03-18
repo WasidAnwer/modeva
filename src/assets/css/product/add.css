@@ -42,30 +42,37 @@ span {
   text-decoration: line-through;
 }
 
-.Add_section .product .content h5 {
+.Add_section .content h5 {
   font-size: 18px;
   color: rgba(33, 37, 41);
+  text-align: start;
 }
 
-.Add_section .product .content .sizes,
-.Add_section .product .content .colors {
+.Add_section .content .sizes,
+.Add_section .content .colors {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.Add_section .product .content input {
+.Add_section .product .content input,
+.Add_section .content .field .colors input,
+.Add_section .content .field .sizes input {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
 
-.Add_section .product .content input:checked + label {
+.Add_section .product .content input:checked+label,
+.Add_section .content .field .colors input:checked+label,
+.Add_section .content .field .sizes input:checked+label {
   background: #bec2c6;
   color: #fff;
 }
 
-.Add_section .product .content label {
+.Add_section .product .content label,
+.Add_section .content .field .colors label,
+.Add_section .content .field .sizes label {
   background: #eef2f7;
   color: #000;
   height: 35px;
@@ -139,12 +146,12 @@ span {
 
 .Add_section .product-fields .content .inner input {
   position: absolute;
-  height: 244px;
-  width: 746px;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   cursor: pointer;
-  top: -4px;
-  right: -4px;
+  top: 0px;
+  right: 0px;
   z-index: 100;
 }
 
@@ -179,7 +186,8 @@ span {
   color: #5d7186;
 }
 
-.Add_section .product-fields .content .field input::placeholder {
+.Add_section .product-fields .content .field input::placeholder,
+.Add_section .product-fields .content .field textarea::placeholder {
   color: #5d7186;
 }
 
@@ -188,7 +196,8 @@ span {
 }
 
 .Add_section .product-fields .content .field input,
-.Add_section .product-fields .content .field select {
+.Add_section .product-fields .content .field select,
+.Add_section .product-fields .content .field textarea {
   display: block;
   outline: none;
   width: 100%;
@@ -197,6 +206,78 @@ span {
   border-radius: 10px;
 }
 
+.Add_section .product-fields .content .field textarea {
+  background: #fcfcfd;
+}
+
 .Add_section .product-fields .content .field select {
   background: #fff;
+}
+
+.Add_section .product-fields .content .field .price-div {
+  display: flex;
+}
+
+.Add_section .product-fields .content .field .price-div span {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5d7186;
+  text-align: center;
+  white-space: nowrap;
+  background: #f8f9fa;
+  border: 1px solid #d8dfec;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.Add_section .product-fields .content .field .price-div input {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.Add_section .product-btns {
+  display: flex;
+  background: #eef2f7;
+  justify-content: end;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Add_section .product-btns button a {
+  text-decoration: none;
+  color: #5d7186;
+}
+
+.Add_section .product-btns button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  width: 15%;
+  border: 1px #5d7186 solid;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.Add_section .product-btns button:hover a{
+  color: #fff;
+}
+
+.Add_section .product-btns button:hover {
+  background: #5d7186;
+}
+
+.Add_section .product-btns button:nth-child(2) {
+  background: #ff6c2f;
+  border: 1px transparent solid;
+}
+
+.Add_section .product-btns button:nth-child(2) a {
+  color: #fff;
+}
+
+.Add_section .product-btns button:nth-child(2):hover {
+  background: #e6612a;
 }
