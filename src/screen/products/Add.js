@@ -1,7 +1,10 @@
-// import { useState } from "react";
-import "../../assets/css/product/add.css";
-
-import P1 from "../../assets/img/p-1.png";
+import React from "react";
+//Import CSS
+import "../../assets/css/product/Add.css";
+//Import Images
+import P1 from "../../assets/images/p-1.png";
+//Import React Bootstrap
+import { Container, Row, Col } from "react-bootstrap";
 
 function Add() {
   return (

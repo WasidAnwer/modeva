@@ -1,0 +1,144 @@
+.navbars {
+  width: 280px;
+  background: #262d34;
+  min-height: 100%;
+  transition: width 0.3s ease;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+}
+
+.navbars.collapsed {
+  width: 60px;
+  text-align: center;
+  position: fixed;
+}
+
+.navbars .slid-nav {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbars .slid-nav .logo {
+  width: 200px;
+}
+
+.navbars .slid-nav .logo figure {
+  margin: 0;
+}
+
+.navbars .slid-nav .logo img {
+  width: 100%;
+}
+
+.navbars .slid-nav i {
+  font-size: 25px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.navbars .navlist {
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  margin: 0;
+}
+
+.navbars .navlist li.norm-links {
+  padding: 0;
+}
+
+.navbars .navlist li.norm-links a {
+  padding: 15px 20px;
+}
+
+.navbars .navlist li {
+  position: relative;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 100%;
+  font-weight: 500;
+  align-content: center;
+  display: block;
+}
+
+.navbars .navlist li a {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+  align-items: center;
+}
+
+.navbars .navlist li span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.navbars .navlist li span.hidden {
+  display: none;
+}
+
+.navbars .navlist li i {
+  width: 25px;
+  font-size: 20px;
+  color: #a0adb9;
+}
+
+.navbars .navlist li.dropdown-open {
+  background-color: #191c20d6;
+  padding-bottom: 0;
+}
+
+.navbars .navlist li i.fa-angle-down,
+.navbars .navlist li i.fa-angle-up {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.navbars .navlist li:hover {
+  background: #191c20d6;
+}
+
+.navbars ul li ul.menu {
+  margin: 10px -20px;
+  margin-bottom: 0;
+}
+
+.navbars ul li ul.menu li {
+  padding: 0;
+}
+
+.navbars ul li ul.menu li:hover {
+  background: #000000;
+}
+
+.navbars ul li ul.menu li a {
+  transition: all 0.5s;
+  padding: 15px;
+  font-size: 13px;
+  color: #7f8a9b;
+  justify-content: left;
+}
+
+.navbars ul li ul.menu li:hover a {
+  color: #fff;
+  padding-left: 25px;
+}
+
+.navbars ul li ul.menu li a::before {
+  content: "\f101";
+  font-size: 13px;
+  font-family: FontAwesome;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: margin ease 0.5s;
+  color: #fff;
+}

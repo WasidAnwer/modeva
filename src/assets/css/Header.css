@@ -1,130 +1,79 @@
 header {
   width: 100%;
-  background: #fff;
-  height: 70px;
+  box-shadow: 0px 2px 5px #0000001c;
+  background: #f9f7f7;
   color: #ffffff;
-  box-shadow: 0 1px 3px #00000069;
   position: fixed;
-  padding-left: 60px;
+  margin-left: 60px;
   z-index: 101;
   top: 0;
+  padding: 10px 0;
 }
 
-header .head-left {
-  position: relative;
-  align-content: center;
+header h2 {
+  color: #5d7186;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-header .head-left .logo figure {
-  margin-bottom: 0;
-}
-
-header .head-left .logo figure img {
-  width: 240px;
-}
-
-/* header .head-left::before {
-  content: "";
-  position: absolute;
-  right: -40px;
-  top: -7px;
-  width: 2px;
-  height: 78px;
-  background-color: #181818;
-} */
-
-header .head-left ul li {
-  font-size: 24px;
-  padding-left: 42px;
-  position: relative;
-}
-
-header .head-left .nv-icon {
-  width: 30px;
-}
-
-header .head-left ul li {
-  font-size: 24px;
-  padding-left: 42px;
-  position: relative;
-}
-
-header .head-right ul {
+header ul {
+  display: flex;
   justify-content: end;
   margin: 0;
   align-items: center;
 }
 
-header .head-right ul li {
-  width: 175px;
-  position: relative;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header ul li {
+  font-size: 24px;
+  padding-left: 42px;
 }
 
-header .head-right ul li img {
+header ul li img {
   width: 30px;
 }
 
-header .head-right ul li a.navi {
+header ul li a.navi {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  text-decoration: none;
   padding: 0;
   color: #6d6d6d;
 }
 
-header .head-right ul li .navi {
+header ul li .navi {
   background: none;
   border: none;
 }
 
-header .head-right ul li .navi .moon {
+header ul li .navi .fa-moon,
+header ul li .navi .fa-sun {
   font-size: 25px;
-  color: rgb(240, 64, 0);
+  color: #5d7186;
 }
 
-header .head-right ul li a figure {
+header ul li .navi .fa-sun {
+  color: #ffff03bd;
+
+}
+
+header ul li figure {
   width: 60px;
   margin: 0;
-  height: 60px;
   border-radius: 50%;
   border: 1px solid rgb(93, 93, 93);
 }
 
-header .head-right ul li a figure img {
+header ul li figure img {
   width: 100%;
   border-radius: 50%;
 }
 
-header .head-right ul li:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 70px;
-  background: #080808;
-}
-
-header .head-right ul li .admin-txt {
-  color: #6d6d6d;
-}
-
-header .head-right ul li .log-out {
-  /* margin-top: 9px; */
+header ul li .log-out {
   display: block;
   color: #6d6d6d;
 }
 
-header .head-right ul li .log-out:hover {
+header ul li .log-out:hover {
   color: rgb(253, 0, 0);
-}
-
-.head-margin {
-  height: 61px;
 }

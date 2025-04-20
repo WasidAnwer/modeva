@@ -1,48 +1,79 @@
-body {
-  /* font-family: sf-pro !important; */
-}
-
 .modeva {
-  display: flex;
-  background-color: #f6f6f6;
-  overflow: hidden;
-  margin-top: 70px;
-  padding-left: 60px;
+  margin: 80px 0 0 60px;
+  background: #f9f7f7;
   width: calc(100% - 60px);
 }
 
-.navigate {
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  position: relative;
-}
-
 .open {
-  width: 100%;
+  max-width: 100%;
   transition: width 0.3s ease, margin-left 0.3s ease;
 }
 
-/* When sidebar is collapsed */
 .closed {
-  width: calc(100% - 265px);
-  margin-left: 265px;
+  width: calc(100% - 280px);
+  margin-left: 280px;
   transition: width 0.3s ease, margin-left 0.3s ease;
   padding-left: 0;
 }
 
-/* *************************mobile screen****************************** */
-/* *************************mobile screen****************************** */
-/* *************************mobile screen****************************** */
-/* *************************mobile screen****************************** */
-/* *************************mobile screen****************************** */
-/* *************************mobile screen****************************** */
-@media (max-width: 767px) {
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
 
-  /* .Echron-Form {
-    margin-top: 25px;
-  } */
-  .modeva-container-body {
-    width: 94% !important;
-  }
+.shortlink-card {
+  position: relative;
+  width: 32%;
+  padding: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #262d34, #a0adb9);
+
+  color: #a0adb9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.shortlink-card h4 {
+  margin: 0;
+  font-size: 18px;
+  padding: 0;
+}
+
+.shortlink-card h2 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.percentage {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  display: block;
+}
+
+.icon {
+  font-size: 50px;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  opacity: 0.9;
+}
+.icon i{
+  color: #262d34;
+}
+
+.recent-order {
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+}
+
+h4 i {
+  color: #c76c04;
 }

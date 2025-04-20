@@ -1,20 +1,19 @@
 
 import React from "react";
-import Markup from "./screen/Markup";
+import Modeva from "./screen/Modeva";
 import Home from "./screen/Home";
 import Add from "./screen/products/Add";
-import ProductList from "./screen/products/productList";
+import List from "./screen/products/List";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Markup />}>
+        <Route path="/" element={<Modeva />}>
           <Route index element={<Home />} />
           <Route path="/AddProduct" element={<Add />} />
-          <Route path="/ProductList" element={<ProductList />} />
-          {/* <Route path="*" element={<Page />} /> */}
+          <Route path="/ProductList" element={<List />} />
         </Route>
         <Route path="404" element={<h1>404 Error</h1>} />
       </Routes>

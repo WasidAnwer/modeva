@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../assets/css/Steps.css";
+import "../assets/css/Nav.css";
+import mark from "../assets/images/modevaLog.png";
+
 
 function Nav({ isCollapsed, setIsCollapsed }) {
 
@@ -22,20 +24,24 @@ function Nav({ isCollapsed, setIsCollapsed }) {
 	return (
 		<div className={`navbars ${isCollapsed ? 'collapsed' : ''}`}>
 			<div className="slid-nav" onClick={handleToggle}>
-				<i className="fa-solid fa-list"></i>
+				{/* <div className="logo">
+					<figure>
+						<img src={mark} alt="" />
+					</figure>
+				</div> */}
+				<i class="fa-solid fa-bag-shopping"></i>
 			</div>
 			<ul className="navlist">
-				<li className={isActive("/Home") ? "active" : ""}>
-					<Link to="/">
+				<li className={isActive("/Home") ? "active" : "norm-links"}>
+					<Link to="/" className={isCollapsed ? "justify-content-center" : ""}>
 						<i className="fa-solid fa-house"></i>
-						{!isCollapsed && "Home"}
+						<span className={isCollapsed ? "hidden" : ""}>Home</span>
 					</Link>
 				</li>
-				<li className={isActive("/Products") ? "active" : ""} onClick={() => toggleDropdown('Products')}>
-					<Link to="/">
-						<i className="fa-solid fa-shirt"></i>
-						{!isCollapsed && "Products"}
-					</Link>
+				<li className={`${isActive("/Products") || activeDropdown === "Products" ? "dropdown-open" : ""}`} onClick={() => toggleDropdown("Products")}>
+					<i className="fa-solid fa-shirt"></i>
+					<span className={isCollapsed ? "hidden" : ""}>Products</span>
+					{!isCollapsed && <i className={`fa-solid ${activeDropdown === "Products" ? "fa-angle-up" : "fa-angle-down"}`}></i>}
 					{activeDropdown === 'Products' && !isCollapsed && (
 						<ul className="menu">
 							<li className={isActive("/ProductList") ? "active" : ""}>
@@ -53,11 +59,10 @@ function Nav({ isCollapsed, setIsCollapsed }) {
 						</ul>
 					)}
 				</li>
-				<li className={isActive("/Category") ? "active" : ""} onClick={() => toggleDropdown('Category')}>
-					<Link to="/Category">
-						<i className="fa-solid fa-layer-group"></i>
-						{!isCollapsed && "Category"}
-					</Link>
+				<li className={`${isActive("/Category") || activeDropdown === "Category" ? "active dropdown-open" : ""}`} onClick={() => toggleDropdown("Category")}>
+					<i className="fa-solid fa-layer-group"></i>
+					<span className={isCollapsed ? "hidden" : ""}>Category</span>
+					{!isCollapsed && <i className={`fa-solid ${activeDropdown === "Category" ? "fa-angle-up" : "fa-angle-down"}`}></i>}
 					{activeDropdown === 'Category' && !isCollapsed && (
 						<ul className="menu">
 							<li className={isActive("/CategoryList") ? "active" : ""}>
@@ -75,11 +80,10 @@ function Nav({ isCollapsed, setIsCollapsed }) {
 						</ul>
 					)}
 				</li>
-				<li className={isActive("/Users") ? "active" : ""} onClick={() => toggleDropdown('Users')}>
-					<Link to="/Users">
-						<i className="fa-solid fa-users"></i>
-						{!isCollapsed && "Users"}
-					</Link>
+				<li className={`${isActive("/Users") || activeDropdown === "Users" ? "active dropdown-open" : ""}`} onClick={() => toggleDropdown("Users")}>
+					<i className="fa-solid fa-users"></i>
+					<span className={isCollapsed ? "hidden" : ""}>Users</span>
+					{!isCollapsed && <i className={`fa-solid ${activeDropdown === "Users" ? "fa-angle-up" : "fa-angle-down"}`}></i>}
 					{activeDropdown === 'Users' && !isCollapsed && (
 						<ul className="menu">
 							<li className={isActive("/UsersList") ? "active" : ""}>
@@ -97,11 +101,10 @@ function Nav({ isCollapsed, setIsCollapsed }) {
 						</ul>
 					)}
 				</li>
-				<li className={isActive("/Orders") ? "active" : ""} onClick={() => toggleDropdown('Users')}>
-					<Link to="/Orders">
-						<i className="fa-solid fa-bag-shopping"></i>
-						{!isCollapsed && "Orders"}
-					</Link>
+				<li className={`${isActive("/Orders") || activeDropdown === "Orders" ? "active dropdown-open" : ""}`} onClick={() => toggleDropdown("Orders")}>
+					<i className="fa-solid fa-bag-shopping"></i>
+					<span className={isCollapsed ? "hidden" : ""}>Orders</span>
+					{!isCollapsed && <i className={`fa-solid ${activeDropdown === "Orders" ? "fa-angle-up" : "fa-angle-down"}`}></i>}
 					{activeDropdown === 'Orders' && !isCollapsed && (
 						<ul className="menu">
 							<li className={isActive("/OrderList") ? "active" : ""}>
@@ -119,16 +122,16 @@ function Nav({ isCollapsed, setIsCollapsed }) {
 						</ul>
 					)}
 				</li>
-				<li className={isActive("/Inventery") ? "active" : ""}>
-					<Link to="/Inventery">
+				<li className={isActive("/Inventery") ? "active" : "norm-links"}>
+					<Link to="/Inventery" className={isCollapsed ? "justify-content-center" : ""}>
 						<i className="fa-solid fa-cube"></i>
-						{!isCollapsed && "Inventery"}
+						<span className={isCollapsed ? "hidden" : ""}>Inventery</span>
 					</Link>
 				</li>
-				<li className={isActive("/Setting") ? "active" : ""}>
-					<Link to="/Setting">
+				<li className={isActive("/Setting") ? "active" : "norm-links"}>
+					<Link to="/Setting" className={isCollapsed ? "justify-content-center" : ""}>
 						<i className="fa-solid fa-gear"></i>
-						{!isCollapsed && "Setting"}
+						<span className={isCollapsed ? "hidden" : ""}>Setting</span>
 					</Link>
 				</li>
 			</ul>

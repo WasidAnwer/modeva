@@ -91,7 +91,6 @@ span {
 
 .Add_section .buttons a {
   width: fit-content;
-  text-decoration: none;
   text-align: center;
   padding: 10px;
   border-radius: 12px;
@@ -246,7 +245,6 @@ span {
 }
 
 .Add_section .product-btns button a {
-  text-decoration: none;
   color: #5d7186;
 }
 

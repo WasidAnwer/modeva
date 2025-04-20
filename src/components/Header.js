@@ -1,52 +1,46 @@
 import React from "react";
 // import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import mark from "../assets/img/modevaLog.png";
-import mark1 from "../assets/img/users.png";
+//CSS Import
 import "../assets/css/Header.css";
+// Images Import
+import mark1 from "../assets/images/users.png";
+// Bootstrap Import
+import { Container, Col, Row } from 'react-bootstrap'
 
 function Header({ darkMode, toggleMode }) {
 
 	return (
-		<div className={darkMode ? "dark-mode" : " "} >
-			<div className="container-fluid">
-				<div className="row">
-					<div className="head-left col-4">
-						{/* <div className="logo">
+		<Container fluid className="header-container">
+			<Row className="align-items-center">
+				<Col xs="6">
+					<div className="welcome-heading">
+						<h2>WELCOME! ADMIN</h2>
+					</div>
+				</Col>
+				<Col xs="6">
+					<ul>
+						<li>
+							<button className="navi" onClick={toggleMode}>
+								<i className={darkMode ? "fa-solid fa-sun" : "fa-solid fa-moon"} ></i>
+							</button>
+						</li>
+						<li>
 							<figure>
-								<img src={mark} alt="" />
+								<img src={mark1} alt="" />
 							</figure>
-						</div> */}
-						<div className="welcome-heading">
-							<h2 className="text-dark">Welcome! Admin</h2>
-						</div>
-					</div>
-					<div className="head-right col-8">
-						<ul className="row">
-							<li>
-								<button className="navi" onClick={toggleMode}>
-									<i className="fa-solid fa-moon moon"></i>
-								</button>
-							</li>
-							<li>
-								<a className="navi" href="/">
-									<figure>
-										<img src={mark1} alt="" />
-									</figure>
-								</a>
-							</li>
-							<li>
-								<Link to="/adm/logout" className="navi">
-									<span className="log-out">
-										<i className="fa fa-sign-out"></i> Logout
-									</span>
-								</Link>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+						</li>
+						<li>
+							<Link to="/adm/logout" className="navi">
+								<span className="log-out">
+									<i className="fa fa-sign-out"></i> Logout
+								</span>
+							</Link>
+						</li>
+					</ul>
+				</Col>
+			</Row>
+		</Container>
 	)
 }
 export default Header;
