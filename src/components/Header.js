@@ -6,7 +6,7 @@ import mark1 from "../assets/img/users.png";
 import "../assets/css/Header.css";
 
 function Header({ darkMode, toggleMode }) {
-
+	const isAdminLoggedIn = localStorage.getItem("adminToken");
 	return (
 		<main>
 			<header className={darkMode ? "dark-mode" : " "} >
@@ -34,11 +34,19 @@ function Header({ darkMode, toggleMode }) {
 									</a>
 								</li>
 								<li>
-									<Link to="/adm/logout" className="navi">
-										<span className="log-out">
-											<i className="fa fa-sign-out"></i> Logout
-										</span>
-									</Link>
+									{isAdminLoggedIn ? (
+										<Link to="/adm/logout" className="navi">
+											<span className="log-out">
+												<i className="fa fa-sign-out"></i> Logout
+											</span>
+										</Link>
+									) : (
+										<Link to="/adm/Login" className="navi">
+											<span className="log-in">
+												<i className="fa fa-sign-in"></i> Login
+											</span>
+										</Link>
+									)}
 								</li>
 							</ul>
 						</div>
